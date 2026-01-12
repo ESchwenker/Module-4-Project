@@ -125,6 +125,7 @@ NAVIGATION
     font-size: 24px;
     font-weight: 700;
     color: white;
+    letter-spacing: 1.5px;
 }
 
 .nav__btn {
@@ -136,7 +137,11 @@ NAVIGATION
 }
 
 .nav__btn:hover {
+    border: 2px solid pink;
+    color: pink;
 }
+
+
 
 
 

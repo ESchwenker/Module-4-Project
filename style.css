@@ -14,19 +14,6 @@ section {
     padding: 0 24px;
 }
 
-body {
-    max-width: 100vw;
-}
-
-nav {
-    height: 180px;
-    display: flex;
-}
-
-img {
-    width: 100%;
-}
-
 a {
     text-decoration: none;
 }
@@ -39,6 +26,11 @@ li {
     list-style-type: none;
 }
 
+h1 {
+    font-size: 64px;
+    color: rgb(244, 205, 13);
+}
+
 h2 {
     font-size: 48px;
 }
@@ -48,6 +40,7 @@ h2 {
     color: rgb(244, 205, 13);
 }
 
+
 /* 
 
 NAVIGATION
@@ -56,50 +49,20 @@ NAVIGATION
 
 .nav__container {
     width: 100%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-}
-
-.img__container {
-    position: relative;
+    height: 200px;
     width: 100%;
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-}
-
-.nav__wrapper--background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1c1d25;
-    opacity: 0.5;
-    z-index: 2;
-}
-
-.nav__img {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    opacity: 50%;
-    z-index: 1;
 }
 
 .nav__info {
     position: absolute;
     width: 100%;
-    max-width: 1200px;
-    padding: 64px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    z-index: 3;
 }
 
 .nav__logo {
@@ -109,14 +72,17 @@ NAVIGATION
 
 .title {
     padding: 12px;
-    color: white;
+    color: black;
 }
 
 .nav__links {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     margin-right: 12px;
+}
+
+.nav__link:hover {
+    color: rgb(247, 157, 172);
 }
 
 .nav__link,
@@ -124,12 +90,12 @@ NAVIGATION
     margin: 24px 36px;
     font-size: 24px;
     font-weight: 700;
-    color: white;
+    color: black;
     letter-spacing: 1.5px;
 }
 
 .nav__btn {
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 50px;
     background-color: transparent;
     padding: 12px;
@@ -137,9 +103,53 @@ NAVIGATION
 }
 
 .nav__btn:hover {
-    border: 2px solid pink;
-    color: pink;
+    border: 2px solid rgb(244, 205, 13);
+    color: rgb(244, 205, 13);
 }
+
+/* 
+
+MAIN 
+
+*/
+
+.main__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__title {
+    margin-top: 80px;
+}
+
+input {
+    border-radius: 50px;
+    padding: 24px;
+    margin-top: 24px;
+    width: 500px;
+    font-size: 20px;
+}
+
+.main__search--input {
+    position: relative;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+}
+
+.main__divide {
+  background-image: url("https://hesterandcook.com/cdn/shop/files/WP102.jpg?v=1692387187&width=1100");
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  height: 100px;
+  position: relative;
+}
+
 
 
 

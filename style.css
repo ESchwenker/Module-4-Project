@@ -85,6 +85,22 @@ NAVIGATION
     color: rgb(247, 157, 172);
 }
 
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;        /* this controls the space under the text */
+  width: 100%;
+  height: 2px;         /* thickness of the underline */
+  background-color: #6415ff;
+  opacity: 0;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+  transition: opacity 800ms ease;
+}
+
 .nav__link,
 .nav__btn {
     margin: 24px 36px;

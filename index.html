@@ -35,13 +35,51 @@
                      type="text"
                      class="main__search--input"
                      placeholder="Find A Fruit"/>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
             <div class="main__divide">
             </div>
         </div>
     </section>
+     <section id="options__main">
+      <div class="options__container">
+        <div class="options__row">
+          <div class="options__header">
+            <h2 class="options__title options__header--title">
+              All Fruits
+            </h2>
+            <select id="filter" onchange="filterFruits(event)">
+             <option value="" disabled selected>Sort by</option>
+             <option value="LOW_TO_HIGH">Calories, Low to High</option>
+             <option value="HIGH_TO_LOW">Calories, High to Low</option>
+             <option value="NAME">Name, A to Z</option>
+            </select>
+          </div>
+          <!-- <div class="options">
+            <i class="fa-solid fa-spinner options__loading--spinner"></i>
+          </div> -->
+        </div>
+      </div>
+    </section>
+ <footer>
+    <div class="footer__copyright">
+      <div class="footer__row">
+        <a href="#">
+          <div class="footer__logo">
+            <i class="fa-solid fa-lemon"></i>
+            <h2 class="title">The Fruit Lab</h2>
+          </div>
+        </a>
+        <div class="footer__list">
+          <a href="#landing" class="footer__link">Home</a>
+          <a href="#options" class="footer__link">Find A Fruit</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2025 ElizabethSchwenker</div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

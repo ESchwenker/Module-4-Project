@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fruit Lab</title>
+    <title>PopcornPix</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2100f2eec8.js" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
@@ -15,11 +15,11 @@
                 <div class="nav__info">
                     <figure class="nav__logo">
                         <i class="fa-solid fa-lemon"></i>
-                        <h2 class="title">The Fruit Lab</h2>
+                        <h2 class="title">PopcornPix</h2>
                     </figure>
                     <div class="nav__links">
                         <a href="#" class="nav__link">Home</a>
-                        <a href="#" class="nav__link">Find a Fruit</a>
+                        <a href="#" class="nav__link">Pick a Pix</a>
                         <button class="nav__btn" a href="#">Contact</button>
                     </div>
                 </div>
@@ -29,12 +29,12 @@
     <section id="main">
         <div class="main__container">
             <div class="main__row">
-                <h1 class="main__title">Search for any fruit</h1>
+                <h1 class="main__title">Start your movie night here...</h1>
                 <div class="main__search">
                     <input
                      type="text"
                      class="main__search--input"
-                     placeholder="Find A Fruit"/>
+                     placeholder="Find your flick"/>
                         <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
@@ -47,7 +47,7 @@
         <div class="options__row">
           <div class="options__header">
             <h2 class="options__title options__header--title">
-              All Fruits
+              All Pix
             </h2>
             <select id="filter" onchange="filterFruits(event)">
              <option value="" disabled selected>Sort by</option>
@@ -59,6 +59,10 @@
           <!-- <div class="options">
             <i class="fa-solid fa-spinner options__loading--spinner"></i>
           </div> -->
+          <div class="fruit__results">
+            <h2 class="fruit__results--title"></h2>
+            <ul class="fruit__results--items"></ul>
+          </div>
         </div>
       </div>
     </section>
@@ -85,12 +89,12 @@
         <a href="#">
           <div class="footer__logo">
             <i class="fa-solid fa-lemon"></i>
-            <h2 class="title">The Fruit Lab</h2>
+            <h2 class="title">PopcornPix</h2>
           </div>
         </a>
         <div class="footer__list">
           <a href="#landing" class="footer__link">Home</a>
-          <a href="#options" class="footer__link">Find A Fruit</a>
+          <a href="#options" class="footer__link">Pick a Pix</a>
           <a href="#" class="footer__link">Contact</a>
         </div>
         <div class="footer__copyright">Copyright &copy; 2025 ElizabethSchwenker</div>

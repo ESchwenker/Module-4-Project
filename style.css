@@ -201,6 +201,7 @@ input {
     justify-content: center;
 }
 
+
 .search__button:hover {
     background-color: rgb(236, 236, 59);
 }
@@ -237,6 +238,10 @@ OPTIONS
     justify-content: space-between;
     align-items: center;
     padding: 24px 0px;
+}
+
+.hidden {
+    display: none;
 }
 
 .options__title,
@@ -395,9 +400,11 @@ h2 {
     font-size: 36px;
 }
 
-.nav__link,
+.nav__link {
+    display: none;
+}
+
 .nav__btn {
-    margin: 18px;
     font-size: 12px;
 }
 
@@ -458,7 +465,6 @@ h2 {
 }
 
 .nav__btn {
-    margin: 18px;
     font-size: 12px;
 }
 

@@ -37,7 +37,7 @@
                         class="main__search--input"
                         onchange="searchChange(event)"
                         placeholder="Find your flick"/>
-                        <button class="search__button" onclick="getMovies()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button id="toggleBtn" class="search__button" onclick="getMovies()"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
      <section id="options__main">
       <div class="options__container">
         <div class="options__row">
-          <div class="options__header">
+          <div id="info" class="options__header hidden">
             <h2 class="options__title options__header--title">
               The "reel" results...
               <span class="searchName"></span>

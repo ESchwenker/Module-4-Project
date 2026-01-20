@@ -54,6 +54,12 @@ function sortChange(event) {
   displayMovies(sortedMovies);
 }
 
+const button = document.getElementById("toggleBtn");
+const info = document.getElementById("info");
+
+button.addEventListener("click", () => {
+  info.classList.toggle("hidden");
+});
 
 
 

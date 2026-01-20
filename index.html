@@ -19,7 +19,7 @@
                     </figure>
                     <div class="nav__links">
                         <a href="#" class="nav__link">Home</a>
-                        <a href="#" class="nav__link">Pick a Pix</a>
+                        <a href="#" class="nav__link">Find Your Flick</a>
                         <button class="nav__btn" a href="#">Contact</button>
                     </div>
                 </div>
@@ -50,15 +50,14 @@
         <div class="options__row">
           <div class="options__header">
             <h2 class="options__title options__header--title">
-              This is what we found...
-              <span class="search__name"></span>
+              The "reel" results...
+              <span class="searchName"></span>
             </h2>
-            <select id="filter" onchange="filterMovies(event)">
+            <select id="movieSort" onchange="sortChange(event)">
              <option value="" disabled selected>Sort by</option>
-             <option value="NAME">Name, A to Z</option>
-             <option value="DATE">Release Date</option>
-             <option value="LOW_TO_HIGH">Rating, Low to High</option>
-             <option value="HIGH_TO_LOW">Rating, High to Low</option>
+             <option value="name">Name, A to Z</option>
+             <option value="newest">Release Date, Newest</option>
+             <option value="oldest">Release Date, Oldest</option>
             </select>
           </div>
         </div>
@@ -68,26 +67,6 @@
         <div class="movie__container">
           <div class="movies__row">
             <div class="movies"></div>
-            <!-- <div class="movies">
-              <img class="movie__poster" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcZT3sdwr1NiJytvJb95icJJKPWpWRNv35l_uuVYxjlzBJS-hb">
-              <h3 class="movie__title">Harry Potter and the..</h3>
-              <h3 class="movie__year">2001</h3>
-            </div>
-             <div class="movies">
-              <img class="movie__poster" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcZT3sdwr1NiJytvJb95icJJKPWpWRNv35l_uuVYxjlzBJS-hb">
-              <h3 class="movie__title">Harry Potter and the..</h3>
-              <h3 class="movie__year">2001</h3>
-            </div>
-             <div class="movies">
-              <img class="movie__poster" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcZT3sdwr1NiJytvJb95icJJKPWpWRNv35l_uuVYxjlzBJS-hb">
-              <h3 class="movie__title">Harry Potter and the..</h3>
-              <h3 class="movie__year">2001</h3>
-            </div>
-             <div class="movies">
-              <img class="movie__poster" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcZT3sdwr1NiJytvJb95icJJKPWpWRNv35l_uuVYxjlzBJS-hb">
-              <h3 class="movie__title">Harry Potter and the..</h3>
-              <h3 class="movie__year">2001</h3>
-            </div> -->
           </div>
         </div>
     </section>
@@ -101,8 +80,8 @@
           </div>
         </a>
         <div class="footer__list">
-          <a href="#landing" class="footer__link">Home</a>
-          <a href="#options" class="footer__link">Pick a Pix</a>
+          <a href="#landing" class="footer__link">Beam Me Up, Scotty!</a>
+          <a href="#main" class="footer__link">Find Your Flick</a>
           <a href="#" class="footer__link">Contact</a>
         </div>
         <div class="footer__copyright">Copyright &copy; 2025 ElizabethSchwenker</div>

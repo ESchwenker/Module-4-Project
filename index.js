@@ -3,14 +3,32 @@
 // poster
 // http://img.omdbapi.com/?apikey=[a5e7ab33]&
 
-async function main() {
-  const data = await fetch("http://www.omdbapi.com/?apikey=a5e7ab33&")
-  const dataMovies = data.json();
+const moviesWrapper = document.querySelector('.movies');
 
-  console.log(dataMovies);
+
+function searchChange(event) {
+  console.log(event.target.value)
 }
 
-main()
+async function renderMovies() {
+  const response = await fetch("https://www.omdbapi.com/?apikey=a5e7ab33&s=harry")
+  const data = await response.json();
+  const moviesArr = data.Search;
+  console.log(moviesArr);
+  moviesWrapper.innerHTML = moviesArr.map((movie) => {
+    return `<div class="movie">
+              <img class="movie__poster" src="${movie.Poster}">
+              <h3 class="movie__title">${movie.Title}</h3>
+              <h3 class="movie__year">${movie.Year}</h3>
+            </div>`
+  })
+
+}
+
+renderMovies()
+
+
+
 
 
 

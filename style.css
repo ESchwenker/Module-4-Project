@@ -174,7 +174,7 @@ input {
 
 .search__button {
     border: none;
-    background-color: white;
+    background-color: rgb(250, 250, 199);
     font-size: 36px;
 }
 
@@ -198,6 +198,11 @@ OPTIONS
     justify-content: space-between;
     align-items: center;
     padding: 24px 48px;
+}
+
+.options__title,
+.search__name {
+    font-size: 36px;
 }
 
 select {

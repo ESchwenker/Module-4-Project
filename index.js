@@ -7,11 +7,11 @@ const moviesWrapper = document.querySelector('.movies');
 
 
 function searchChange(event) {
-  console.log(event.target.value)
+  renderMovies(event.target.value)
 }
 
-async function renderMovies() {
-  const response = await fetch("https://www.omdbapi.com/?apikey=a5e7ab33&s=harry")
+async function renderMovies(searchTerm) {
+  const response = await fetch("https://www.omdbapi.com/?apikey=a5e7ab33&s=${searchTerm}")
   const data = await response.json();
   const moviesArr = data.Search;
   console.log(moviesArr);
@@ -25,7 +25,7 @@ async function renderMovies() {
 
 }
 
-renderMovies()
+
 
 
 

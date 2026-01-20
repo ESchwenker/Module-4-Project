@@ -21,7 +21,7 @@ async function renderMovies() {
               <h3 class="movie__title">${movie.Title}</h3>
               <h3 class="movie__year">${movie.Year}</h3>
             </div>`
-  })
+  }).join('')
 
 }
 
